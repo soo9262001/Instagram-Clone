@@ -12,6 +12,10 @@
 		25CB61A626BFACD5005EC80A /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB61A526BFACD5005EC80A /* ProfileInfoHeaderCollectionReusableView.swift */; };
 		25CB61A826BFAD0F005EC80A /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB61A726BFAD0F005EC80A /* ProfileTabsCollectionReusableView.swift */; };
 		25CB61AA26BFC91A005EC80A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB61A926BFC91A005EC80A /* Models.swift */; };
+		25CB61B826C2D4F9005EC80A /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB61B726C2D4F9005EC80A /* NotificationFollowEventTableViewCell.swift */; };
+		25CB61BA26C2D529005EC80A /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB61B926C2D529005EC80A /* NotificationLikeEventTableViewCell.swift */; };
+		25CB61BC26C2D5A5005EC80A /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB61BB26C2D5A5005EC80A /* UserFollowTableViewCell.swift */; };
+		25CB61BE26C2D627005EC80A /* NoNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB61BD26C2D627005EC80A /* NoNotificationView.swift */; };
 		25D8B55B26B959AC00EAAA41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8B55A26B959AC00EAAA41 /* AppDelegate.swift */; };
 		25D8B55D26B959AC00EAAA41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8B55C26B959AC00EAAA41 /* SceneDelegate.swift */; };
 		25D8B55F26B959AC00EAAA41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8B55E26B959AC00EAAA41 /* HomeViewController.swift */; };
@@ -50,6 +54,10 @@
 		25CB61A526BFACD5005EC80A /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		25CB61A726BFAD0F005EC80A /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		25CB61A926BFC91A005EC80A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		25CB61B726C2D4F9005EC80A /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		25CB61B926C2D529005EC80A /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
+		25CB61BB26C2D5A5005EC80A /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		25CB61BD26C2D627005EC80A /* NoNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationView.swift; sourceTree = "<group>"; };
 		25D8B55726B959AC00EAAA41 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D8B55A26B959AC00EAAA41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25D8B55C26B959AC00EAAA41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +115,15 @@
 			path = "CollectionView Headers";
 			sourceTree = "<group>";
 		};
+		25CB61B626C2D4CA005EC80A /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				25CB61B726C2D4F9005EC80A /* NotificationFollowEventTableViewCell.swift */,
+				25CB61B926C2D529005EC80A /* NotificationLikeEventTableViewCell.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		25D8B54E26B959AC00EAAA41 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +161,7 @@
 				25D8B59D26BBFBC900EAAA41 /* Cell */,
 				25D8B56326B959B400EAAA41 /* Assets.xcassets */,
 				25D8B57226B95A3F00EAAA41 /* Storyboards */,
+				25CB61BD26C2D627005EC80A /* NoNotificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,9 +254,11 @@
 		25D8B59D26BBFBC900EAAA41 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				25CB61B626C2D4CA005EC80A /* Notification */,
 				25D8B5A026BBFD9D00EAAA41 /* HomeFeed */,
 				25CB61A026BFA295005EC80A /* FormTableViewCell.swift */,
 				25CB61A326BFAC7E005EC80A /* PhotoCollectionViewCell.swift */,
+				25CB61BB26C2D5A5005EC80A /* UserFollowTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -386,10 +406,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25CB61BE26C2D627005EC80A /* NoNotificationView.swift in Sources */,
 				25D8B58526B95BD600EAAA41 /* EditProfileViewController.swift in Sources */,
 				25D8B57426B95AB600EAAA41 /* ExploreViewController.swift in Sources */,
 				25D8B59126B95C4500EAAA41 /* PublishPostViewController.swift in Sources */,
 				25D8B57626B95AD000EAAA41 /* CameraViewController.swift in Sources */,
+				25CB61B826C2D4F9005EC80A /* NotificationFollowEventTableViewCell.swift in Sources */,
 				25D8B57826B95AEB00EAAA41 /* NotificationViewController.swift in Sources */,
 				25D8B58026B95B7F00EAAA41 /* RegistrationViewController.swift in Sources */,
 				25D8B5A226BBFDCE00EAAA41 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
@@ -403,9 +425,11 @@
 				25D8B59C26B99E4600EAAA41 /* Extension.swift in Sources */,
 				25D8B55F26B959AC00EAAA41 /* HomeViewController.swift in Sources */,
 				25CB61A426BFAC7E005EC80A /* PhotoCollectionViewCell.swift in Sources */,
+				25CB61BC26C2D5A5005EC80A /* UserFollowTableViewCell.swift in Sources */,
 				25D8B59F26BBFBF700EAAA41 /* IGFeedPostTableViewCell.swift in Sources */,
 				25D8B58D26B95C0E00EAAA41 /* SearchResultViewController.swift in Sources */,
 				25D8B57E26B95B6600EAAA41 /* LoginViewController.swift in Sources */,
+				25CB61BA26C2D529005EC80A /* NotificationLikeEventTableViewCell.swift in Sources */,
 				25D8B5A626BC10A000EAAA41 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				25D8B58B26B95BFF00EAAA41 /* SearchViewController.swift in Sources */,
 				25CB61A626BFACD5005EC80A /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
