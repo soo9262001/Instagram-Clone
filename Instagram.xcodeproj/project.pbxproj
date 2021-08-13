@@ -157,11 +157,11 @@
 		25D8B56E26B959CD00EAAA41 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				25CB61BD26C2D627005EC80A /* NoNotificationView.swift */,
 				25CB61A226BFAC2E005EC80A /* CollectionView Headers */,
 				25D8B59D26BBFBC900EAAA41 /* Cell */,
 				25D8B56326B959B400EAAA41 /* Assets.xcassets */,
 				25D8B57226B95A3F00EAAA41 /* Storyboards */,
-				25CB61BD26C2D627005EC80A /* NoNotificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				25CB61B626C2D4CA005EC80A /* Notification */,
-				25D8B5A026BBFD9D00EAAA41 /* HomeFeed */,
+				25D8B5A026BBFD9D00EAAA41 /* HomeFeed & Post */,
 				25CB61A026BFA295005EC80A /* FormTableViewCell.swift */,
 				25CB61A326BFAC7E005EC80A /* PhotoCollectionViewCell.swift */,
 				25CB61BB26C2D5A5005EC80A /* UserFollowTableViewCell.swift */,
@@ -263,15 +263,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		25D8B5A026BBFD9D00EAAA41 /* HomeFeed */ = {
+		25D8B5A026BBFD9D00EAAA41 /* HomeFeed & Post */ = {
 			isa = PBXGroup;
 			children = (
-				25D8B5A126BBFDCE00EAAA41 /* IGFeedPostHeaderTableViewCell.swift */,
 				25D8B59E26BBFBF600EAAA41 /* IGFeedPostTableViewCell.swift */,
+				25D8B5A126BBFDCE00EAAA41 /* IGFeedPostHeaderTableViewCell.swift */,
 				25D8B5A326BC108A00EAAA41 /* IGFeedPostActionTableViewCell.swift */,
 				25D8B5A526BC10A000EAAA41 /* IGFeedPostGeneralTableViewCell.swift */,
 			);
-			path = HomeFeed;
+			path = "HomeFeed & Post";
 			sourceTree = "<group>";
 		};
 		5181201A14AC2BFA33C68687 /* Frameworks */ = {
