@@ -39,7 +39,7 @@ public struct UserPost {
     let identifier: String
     let postType: UserPostType
     let thumnailImage: URL  //
-    let postURL : URL
+    let postURL : URL // either video url or full resolution photo
     let caption: String?
     let likeCount: [PostLike]
     let comments: [PostComment]
